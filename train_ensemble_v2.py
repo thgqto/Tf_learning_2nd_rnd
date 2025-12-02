@@ -1,6 +1,3 @@
-# train_ensemble_ULTRA_FINAL.py
-# THIS ONE WORKS — NO ERRORS — PERFECT ENCODER
-
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import IsolationForest
@@ -14,7 +11,7 @@ import joblib
 import warnings
 warnings.filterwarnings("ignore")
 
-print("Starting ULTRA FINAL training...")
+print("Starting training...")
 
 # === 1. Load data ===
 train_files = ['train_1.zip', 'train_2.zip', 'train_3.zip', 'train_4.zip']
@@ -105,4 +102,5 @@ joblib.dump(scaler, 'scaler.pkl', compress=3)
 print("\nULTRA FINAL SUCCESS!")
 print("4 perfect files ready for Pi")
 print("→ id_encoder.pkl now contains id1–id10")
+
 print("→ No more 'nan' or unseen label errors")
