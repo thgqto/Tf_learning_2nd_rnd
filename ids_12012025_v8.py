@@ -1,6 +1,3 @@
-# ids_real_model_FINAL.py
-# This one works — no errors, real F1 score
-
 import joblib
 import pandas as pd
 import numpy as np
